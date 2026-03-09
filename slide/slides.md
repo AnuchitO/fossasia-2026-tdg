@@ -11,7 +11,7 @@ class: text-center
 drawings:
   persist: false
 transition: slide-left
-duration: 20min
+duration: 15min
 fonts:
   sans: 'Inter'
   mono: 'JetBrains Mono'
@@ -38,225 +38,160 @@ Clone developer skills into AI agents
 transition: fade-out
 ---
 
-# AI Coding is Changing Development
+# The Legacy Code Challenge
 
-<v-clicks>
+<div class="grid grid-cols-2 gap-4 mt-6">
+  <div v-click class="p-4 bg-red-500/10 rounded-lg">
+    <div class="text-sm font-bold mb-1">Nobody knows how it works</div>
+    <div class="text-xs opacity-70">The original authors are gone. The knowledge left with them. What remains is code and fear.</div>
+  </div>
+  <div v-click class="p-4 bg-orange-500/10 rounded-lg">
+    <div class="text-sm font-bold mb-1">No tests — no safety net</div>
+    <div class="text-xs opacity-70">Touch one thing, break three others. Nobody wants to refactor what's already running in production.</div>
+  </div>
+  <div v-click class="p-4 bg-yellow-500/10 rounded-lg">
+    <div class="text-sm font-bold mb-1">Bigger than any context window</div>
+    <div class="text-xs opacity-70">500k lines. 10 years old. AI sees a keyhole into a very large room — it has no idea what it might break.</div>
+  </div>
+  <div v-click class="p-4 bg-purple-500/10 rounded-lg">
+    <div class="text-sm font-bold mb-1">AI makes it worse</div>
+    <div class="text-xs opacity-70">Generate more code into a fragile system — with no tests, no proof — and the mess compounds.</div>
+  </div>
+</div>
 
-- AI agents can generate code **very quickly**
-- We scaffold applications, APIs, and UI in **minutes**
-- Developers are increasingly **supervising** AI agents
-
-</v-clicks>
-
-<div v-click class="mt-12 p-6 bg-blue-500/10 rounded-lg text-xl text-center">
-  AI is very good at generating <span v-mark.underline.blue="5">programs</span>.
+<div v-click class="mt-5 p-4 bg-white/5 rounded-lg text-center text-base">
+  Most real software is legacy software.<br>
+  <span class="opacity-60 text-sm">This is the problem AI tools weren't built to solve.</span>
 </div>
 
 ---
 
-# Real Software is a System
+# The Bottleneck Was Never the Typing
 
-In real organizations, we deal with:
-
-<div class="grid grid-cols-2 gap-4 mt-8">
-  <div v-click class="p-4 bg-orange-500/10 rounded-lg text-center">
-    <div class="text-3xl mb-2">🏗️</div>
-    Legacy codebases
+<div class="grid grid-cols-2 gap-6 mt-8">
+  <div v-click class="p-5 bg-blue-500/10 rounded-lg text-center">
+    <div class="text-5xl font-black text-blue-400">&lt;10%</div>
+    <div class="mt-2 text-sm opacity-70">of developer time<br>actually writing code</div>
   </div>
-  <div v-click class="p-4 bg-orange-500/10 rounded-lg text-center">
-    <div class="text-3xl mb-2">🔗</div>
-    Integrations
-  </div>
-  <div v-click class="p-4 bg-orange-500/10 rounded-lg text-center">
-    <div class="text-3xl mb-2">⏱️</div>
-    Long-running systems
-  </div>
-  <div v-click class="p-4 bg-orange-500/10 rounded-lg text-center">
-    <div class="text-3xl mb-2">🔧</div>
-    Maintenance
+  <div v-click class="p-5 bg-red-500/10 rounded-lg text-center">
+    <div class="text-5xl font-black text-red-400">75%</div>
+    <div class="mt-2 text-sm opacity-70">debugging, integration<br>& maintenance</div>
   </div>
 </div>
 
-<div v-click class="mt-8 text-xl text-center">
-  AI generates programs, but software engineering <span v-mark.highlight.orange="6">builds systems</span>.
-</div>
-
----
-
-# If AI Makes Coding 10× Faster...
-
-<div v-click class="mt-6 text-xl text-center opacity-80">
-  Suppose AI codes 10× faster. How much total time do you actually save?
-</div>
-
-<div v-click class="mt-8 grid grid-cols-2 gap-6">
-  <div class="p-5 bg-blue-500/10 rounded-lg text-center">
-    <div class="text-4xl font-bold text-blue-400">&lt;10%</div>
-    <div class="mt-2 text-base opacity-70">of developer time is<br>actually spent writing code</div>
+<div v-click class="mt-6 p-6 bg-yellow-500/10 rounded-lg text-center">
+  <div class="text-xs opacity-60 mb-3">With AI generating more code than ever —</div>
+  <div class="text-4xl font-black tracking-wide leading-tight">
+    More code. Faster.<br>Still <span class="text-red-400">no tests</span>. Still <span class="text-orange-400">no proof</span>.
   </div>
-  <div class="p-5 bg-red-500/10 rounded-lg text-center">
-    <div class="text-4xl font-bold text-red-400">75%</div>
-    <div class="mt-2 text-base opacity-70">is spent on debugging,<br>integration & maintenance</div>
-  </div>
-</div>
-
-<div v-click class="mt-8 p-5 bg-yellow-500/10 rounded-lg text-xl text-center">
-  Making the <span v-mark.underline.yellow="4">&lt;10%</span> go faster doesn't move the needle.<br>
-  <span class="text-base opacity-60 mt-2 block">The bottleneck was never the typing.</span>
 </div>
 
 <div class="abs-bl mb-4 ml-6 text-xs opacity-30">
-  ¹ Rodenas, D. (2021) · ² Undo/Coralogix Developer Survey · ³ Microsoft Research, IEEE TSE (2019)
-</div>
-
-<!--
-## References
-
-1. David Rodenas PhD – "Developers Spend Less Than 10% of Time Coding" (2021)
-   https://drpicox.medium.com/developers-spend-less-than-10-of-time-coding-51c36c73a93b
-
-2. Undo / Coralogix – "This is what your developers are doing 75% of the time"
-   https://coralogix.com/blog/this-is-what-your-developers-are-doing-75-of-the-time-and-this-is-the-cost-you-pay/
-
-3. Meyer, Barr, Bird, Zimmermann – "Today was a Good Day: The Daily Life of Software Developers"
-   Microsoft Research, IEEE Transactions on Software Engineering (2019)
-   https://www.microsoft.com/en-us/research/uploads/prod/2019/04/devtime-preprint-TSE19.pdf
-
-4. The Debugging Mindset – ACM Queue
-   https://queue.acm.org/detail.cfm?id=3068754
-
-Key talking points:
-- The <10% figure comes from empirical time-tracking studies of real developers
-- The 75% figure is from an industry survey of 450+ developers (Undo, 2021)
-- Microsoft Research corroborates: on most workdays, coding is a minority activity
-- Debugging alone accounts for 25–50% depending on system complexity (ACM Queue)
--->
-
----
-
-# The Skills Overload Problem
-
-<div class="text-lg mt-4 mb-8 opacity-80">
-  Thousands of prompts, frameworks, and AI coding techniques.
-</div>
-
-<v-clicks>
-
-- Which prompts should we **trust**?
-- Which techniques are **safe**?
-- How do we avoid **prompt injection**?
-- How do we make development **consistent** across a team?
-
-</v-clicks>
-
-<div v-click class="mt-8 p-4 bg-yellow-500/10 rounded-lg text-center text-lg">
-  Teams need <span v-mark.circle.yellow="6">guardrails</span>, not more options.
+  ¹ Rodenas, D. · ² Undo/Coralogix Developer Survey · ³ Microsoft Research, IEEE TSE
 </div>
 
 ---
 
-# TDD Recap
+# TDD — The Discipline That Worked
 
-<div class="grid grid-cols-3 gap-4 mt-8 text-center">
-  <div v-click class="p-5 bg-red-500/20 rounded-lg border border-red-500/30">
-    <div class="text-4xl mb-3">🔴</div>
-    <div class="text-xl font-bold mb-2">Red</div>
-    <div class="text-sm opacity-80">Write a failing test<br>that defines the behavior</div>
+<div class="grid grid-cols-3 gap-4 mt-6 text-center">
+  <div v-click class="p-4 bg-red-500/20 rounded-lg border border-red-500/30">
+    <div class="text-3xl mb-2">🔴</div>
+    <div class="text-lg font-bold mb-1">Red</div>
+    <div class="text-xs opacity-80">Write a failing test<br>that defines the behavior</div>
   </div>
-  <div v-click class="p-5 bg-green-500/20 rounded-lg border border-green-500/30">
-    <div class="text-4xl mb-3">🟢</div>
-    <div class="text-xl font-bold mb-2">Green</div>
-    <div class="text-sm opacity-80">Write the minimum code<br>to make the test pass</div>
+  <div v-click class="p-4 bg-green-500/20 rounded-lg border border-green-500/30">
+    <div class="text-3xl mb-2">🟢</div>
+    <div class="text-lg font-bold mb-1">Green</div>
+    <div class="text-xs opacity-80">Write minimum code<br>to make the test pass</div>
   </div>
-  <div v-click class="p-5 bg-blue-500/20 rounded-lg border border-blue-500/30">
-    <div class="text-4xl mb-3">🔵</div>
-    <div class="text-xl font-bold mb-2">Refactor</div>
-    <div class="text-sm opacity-80">Clean up the code<br>without breaking tests</div>
+  <div v-click class="p-4 bg-blue-500/20 rounded-lg border border-blue-500/30">
+    <div class="text-3xl mb-2">🔵</div>
+    <div class="text-lg font-bold mb-1">Refactor</div>
+    <div class="text-xs opacity-80">Clean up the code<br>without breaking tests</div>
   </div>
 </div>
 
-<div v-click class="mt-8 p-4 bg-yellow-500/10 rounded-lg text-center text-lg">
-  Tests define <span v-mark.underline.yellow="5">intent</span> — code fulfills it.
+<div v-click class="mt-5 grid grid-cols-2 gap-4">
+  <div class="p-3 bg-white/5 rounded-lg text-xs opacity-80">
+    <strong>Why it worked:</strong> You couldn't write a line of code without first saying what it should do. The test is the proof. Refactoring became safe.
+  </div>
+  <div class="p-3 bg-white/5 rounded-lg text-xs opacity-80">
+    <strong>In legacy systems:</strong> Tests are the contract that survives beyond context. Keep them green — and you know you haven't broken anything, even without reading everything.
+  </div>
+</div>
+
+<div v-click class="mt-5 p-4 bg-yellow-500/10 rounded-lg text-center text-lg">
+  Tests define <span v-mark.underline.yellow="6">intent</span>.
+  Code fulfills it.
+  That discipline is what makes software <span v-mark.underline.yellow="6">safe to change</span>.
 </div>
 
 ---
 layout: center
 ---
 
-# Introducing TDG
+# TDG — Test Driven Generation
 
 <div class="text-center">
-  <div class="text-5xl font-bold mb-4">
-    <span class="text-blue-400">T</span>est
-    <span class="text-blue-400">D</span>riven
-    <span class="text-blue-400">G</span>eneration
-  </div>
 
-  <div v-click class="mt-6 text-xl opacity-80">
-    Instead of random AI generation,<br>
-    encode developer practices into AI workflows.
-  </div>
+<div v-click class="mt-4 text-xl opacity-70">
+  Your team's discipline doesn't have to live only in your head.
+</div>
 
-  <div v-click class="mt-8 p-6 bg-blue-500/10 rounded-lg text-2xl">
-    Clone developer skills into AI agents.
+<div v-click class="mt-8 flex justify-center items-center gap-6">
+  <div class="p-5 bg-white/5 rounded-lg text-center w-40">
+    <div class="text-3xl mb-2">🧑‍💻</div>
+    <div class="text-sm font-bold">Your practice</div>
+    <div class="text-xs opacity-60 mt-1">How to test. How to structure. What to avoid.</div>
   </div>
+  <div class="text-3xl opacity-40">→</div>
+  <div class="p-5 bg-blue-500/10 rounded-lg text-center w-40">
+    <div class="text-3xl mb-2">🤖</div>
+    <div class="text-sm font-bold">AI agent</div>
+    <div class="text-xs opacity-60 mt-1">Follows your discipline. Every time.</div>
+  </div>
+</div>
 
-  <div v-click class="flex justify-center gap-6 mt-8">
-    <div class="p-3 bg-green-500/10 rounded">More control</div>
-    <div class="p-3 bg-green-500/10 rounded">Predictable output</div>
-    <div class="p-3 bg-green-500/10 rounded">Production-grade quality</div>
-  </div>
+<div v-click class="mt-8 flex justify-center gap-3 text-xs text-center">
+  <div class="p-2 bg-red-500/20 rounded w-28">🔴 Red<br><span class="opacity-60">write the test</span></div>
+  <div class="flex items-center opacity-40">→</div>
+  <div class="p-2 bg-green-500/20 rounded w-28">🤖 Green<br><span class="opacity-60">AI generates</span></div>
+  <div class="flex items-center opacity-40">→</div>
+  <div class="p-2 bg-blue-500/20 rounded w-28">🔵 Refactor<br><span class="opacity-60">AI cleans up</span></div>
+</div>
+
+<div v-click class="mt-8 text-lg font-bold">
+  Clone developer skills into AI agents.
+</div>
+
 </div>
 
 ---
 
-# Demo
+# Demo: Replay CLI
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-  <div class="p-6 bg-blue-500/10 rounded-lg">
-    <div class="text-2xl font-bold mb-4">Demo 1: Replay CLI</div>
-    <div class="text-sm opacity-80 mb-4">
-      Replays git commit history step-by-step.
-    </div>
-    <ul class="text-sm">
-      <li v-click>Commits represent learning steps</li>
-      <li v-click>Replay the development process</li>
-      <li v-click>Easier to follow</li>
-      <li v-click>Saves teaching time</li>
-    </ul>
+<div class="mt-6 p-5 bg-blue-500/10 rounded-lg mb-6">
+  <div class="text-base opacity-90 mb-3">
+    A teaching tool — replays a git repo commit-by-commit. Each commit is one step.
+    Learners see not just <em>what</em> was built, but <em>how</em> and <em>why</em>.
   </div>
-
-  <div v-click class="p-6 bg-green-500/10 rounded-lg">
-    <div class="text-2xl font-bold mb-4">Demo 2: Qoomlee Airline</div>
-    <div class="text-sm opacity-80 mb-4">
-      Check-in UI built with TDG + React.
-    </div>
-    <ul class="text-sm">
-      <li v-click>TDG applied to UI development</li>
-      <li v-click>Test-first component generation</li>
-      <li v-click>Production-ready output</li>
-    </ul>
-  </div>
+  <div class="text-xs opacity-60">Built entirely with TDG — every commit is a Red, Green, or Refactor step.</div>
 </div>
 
----
-
-# Software is a System, Not Just Parts
-
-<div class="grid grid-cols-2 gap-8 mt-4 items-center">
-  <div class="text-center">
-    <img src="/images/car-component.png" class="rounded-lg mx-auto" style="max-height: 280px; object-fit: contain;" />
-    <div class="mt-3 text-lg opacity-70">Parts generated quickly</div>
+<div class="grid grid-cols-3 gap-4 text-center">
+  <div v-click class="p-3 bg-white/5 rounded-lg text-xs">
+    <div class="text-xl mb-1">🔴</div>
+    <strong>Red commit</strong><br>failing test added
   </div>
-  <div v-click class="text-center">
-    <img src="/images/car.png" class="rounded-lg mx-auto" style="max-height: 280px; object-fit: contain;" />
-    <div class="mt-3 text-lg opacity-70">A system that <strong>works as one</strong></div>
+  <div v-click class="p-3 bg-white/5 rounded-lg text-xs">
+    <div class="text-xl mb-1">🟢</div>
+    <strong>Green commit</strong><br>minimum code to pass
   </div>
-</div>
-
-<div v-click class="mt-6 p-4 bg-blue-500/10 rounded-lg text-xl text-center">
-  Great software isn't about how fast each part was generated —<br>
-  it's about how well they all <span v-mark.underline.blue="3">interact</span> as a whole.
+  <div v-click class="p-3 bg-white/5 rounded-lg text-xs">
+    <div class="text-xl mb-1">🔵</div>
+    <strong>Refactor commit</strong><br>cleaned up, tests still green
+  </div>
 </div>
 
 ---
@@ -264,32 +199,27 @@ layout: center
 class: text-center
 ---
 
-# Software is Change
+# Software That Survives Change
 
-<div v-click class="text-xl mt-4 opacity-80">
-  We deal with change constantly — requirements shift, systems evolve, teams grow.
-</div>
-
-<div v-click class="text-xl mt-2 opacity-80">
-  What we need is <span v-mark.underline.orange="3">stability</span> — systems that <span v-mark.underline.blue="3">survive over time</span>.
-</div>
-
-<div class="grid grid-cols-2 gap-4 mt-6">
-  <div v-click class="p-5 bg-red-500/10 rounded-lg text-center">
-    <div class="text-sm opacity-60 mb-2">The problem</div>
-    <div class="text-lg">AI agents give us <strong>speed</strong>,<br>but speed alone doesn't make software <strong>survive</strong>.</div>
-  </div>
-
-  <div v-click class="p-5 bg-blue-500/10 rounded-lg text-center">
-    <div class="text-sm opacity-60 mb-2">TDG</div>
-    <div class="text-lg">Encode your team's discipline into AI workflows — <strong>generativity with guardrails</strong>.</div>
-  </div>
-</div>
-
-<div v-click class="mt-6">
-  <a href="https://github.com/chanwit/tdg" target="_blank" class="text-2xl">
+<div class="mt-2 text-2xl font-bold">
+  <a href="https://github.com/chanwit/tdg" target="_blank">
     <carbon:logo-github /> github.com/chanwit/tdg
   </a>
+</div>
+
+<div v-click class="text-xl mt-6 opacity-80">
+  AI gives us speed. Speed alone doesn't make software survive.
+</div>
+
+<div v-click class="mt-6 p-5 bg-blue-500/10 rounded-lg text-lg">
+  TDG encodes your team's discipline into AI workflows.<br>
+  <strong>Generativity with guardrails.</strong>
+</div>
+
+<div v-click class="mt-6 text-2xl font-bold leading-snug">
+  The best engineers <span class="text-red-400">don't write the most code</span>.<br>
+  They write <span class="text-green-400">the code that lasts</span>.<br>
+  <span class="text-blue-400">Let's teach our AI to do the same.</span>
 </div>
 
 <div class="abs-br m-6 flex flex-col gap-1 text-right text-sm">
