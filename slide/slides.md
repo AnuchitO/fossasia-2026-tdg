@@ -83,23 +83,54 @@ In real organizations, we deal with:
 
 ---
 
-# The False Assumption
+# If AI Makes Coding 10× Faster...
 
-<div v-click class="p-6 bg-red-500/10 rounded-lg mb-8 text-center">
-  <div class="text-lg opacity-60 mb-2">Common belief</div>
-  <div class="text-2xl font-bold">Coding faster = Finishing software faster</div>
+<div v-click class="mt-6 text-xl text-center opacity-80">
+  Suppose AI codes 10× faster. How much total time do you actually save?
 </div>
 
-<div v-click class="text-lg mb-4 opacity-80 text-center">Reality: these dominate development time</div>
+<div v-click class="mt-8 grid grid-cols-2 gap-6">
+  <div class="p-5 bg-blue-500/10 rounded-lg text-center">
+    <div class="text-4xl font-bold text-blue-400">&lt;10%</div>
+    <div class="mt-2 text-base opacity-70">of developer time is<br>actually spent writing code</div>
+  </div>
+  <div class="p-5 bg-red-500/10 rounded-lg text-center">
+    <div class="text-4xl font-bold text-red-400">75%</div>
+    <div class="mt-2 text-base opacity-70">is spent on debugging,<br>integration & maintenance</div>
+  </div>
+</div>
 
-<v-clicks>
+<div v-click class="mt-8 p-5 bg-yellow-500/10 rounded-lg text-xl text-center">
+  Making the <span v-mark.underline.yellow="4">&lt;10%</span> go faster doesn't move the needle.<br>
+  <span class="text-base opacity-60 mt-2 block">The bottleneck was never the typing.</span>
+</div>
 
-- Debugging
-- Integration
-- Architecture
-- Long-term maintenance
+<div class="abs-bl mb-4 ml-6 text-xs opacity-30">
+  ¹ Rodenas, D. (2021) · ² Undo/Coralogix Developer Survey · ³ Microsoft Research, IEEE TSE (2019)
+</div>
 
-</v-clicks>
+<!--
+## References
+
+1. David Rodenas PhD – "Developers Spend Less Than 10% of Time Coding" (2021)
+   https://drpicox.medium.com/developers-spend-less-than-10-of-time-coding-51c36c73a93b
+
+2. Undo / Coralogix – "This is what your developers are doing 75% of the time"
+   https://coralogix.com/blog/this-is-what-your-developers-are-doing-75-of-the-time-and-this-is-the-cost-you-pay/
+
+3. Meyer, Barr, Bird, Zimmermann – "Today was a Good Day: The Daily Life of Software Developers"
+   Microsoft Research, IEEE Transactions on Software Engineering (2019)
+   https://www.microsoft.com/en-us/research/uploads/prod/2019/04/devtime-preprint-TSE19.pdf
+
+4. The Debugging Mindset – ACM Queue
+   https://queue.acm.org/detail.cfm?id=3068754
+
+Key talking points:
+- The <10% figure comes from empirical time-tracking studies of real developers
+- The 75% figure is from an industry survey of 450+ developers (Undo, 2021)
+- Microsoft Research corroborates: on most workdays, coding is a minority activity
+- Debugging alone accounts for 25–50% depending on system complexity (ACM Queue)
+-->
 
 ---
 
@@ -206,6 +237,26 @@ layout: center
       <li v-click>Production-ready output</li>
     </ul>
   </div>
+</div>
+
+---
+
+# Software is a System, Not Just Parts
+
+<div class="grid grid-cols-2 gap-8 mt-4 items-center">
+  <div class="text-center">
+    <img src="/images/car-component.png" class="rounded-lg mx-auto" style="max-height: 280px; object-fit: contain;" />
+    <div class="mt-3 text-lg opacity-70">Parts generated quickly</div>
+  </div>
+  <div v-click class="text-center">
+    <img src="/images/car.png" class="rounded-lg mx-auto" style="max-height: 280px; object-fit: contain;" />
+    <div class="mt-3 text-lg opacity-70">A system that <strong>works as one</strong></div>
+  </div>
+</div>
+
+<div v-click class="mt-6 p-4 bg-blue-500/10 rounded-lg text-xl text-center">
+  Great software isn't about how fast each part was generated —<br>
+  it's about how well they all <span v-mark.underline.blue="3">interact</span> as a whole.
 </div>
 
 ---

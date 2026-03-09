@@ -4,6 +4,7 @@
 - Language: TypeScript
 - Framework: React 19 + Vite 7
 - Test Framework: Vitest 4 + @testing-library/react
+- double check Type every before commit in every green state.
 
 ## Build Command
 bun run build
