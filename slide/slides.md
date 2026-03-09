@@ -119,6 +119,32 @@ In real organizations, we deal with:
 </div>
 
 ---
+
+# TDD Recap
+
+<div class="grid grid-cols-3 gap-4 mt-8 text-center">
+  <div v-click class="p-5 bg-red-500/20 rounded-lg border border-red-500/30">
+    <div class="text-4xl mb-3">🔴</div>
+    <div class="text-xl font-bold mb-2">Red</div>
+    <div class="text-sm opacity-80">Write a failing test<br>that defines the behavior</div>
+  </div>
+  <div v-click class="p-5 bg-green-500/20 rounded-lg border border-green-500/30">
+    <div class="text-4xl mb-3">🟢</div>
+    <div class="text-xl font-bold mb-2">Green</div>
+    <div class="text-sm opacity-80">Write the minimum code<br>to make the test pass</div>
+  </div>
+  <div v-click class="p-5 bg-blue-500/20 rounded-lg border border-blue-500/30">
+    <div class="text-4xl mb-3">🔵</div>
+    <div class="text-xl font-bold mb-2">Refactor</div>
+    <div class="text-sm opacity-80">Clean up the code<br>without breaking tests</div>
+  </div>
+</div>
+
+<div v-click class="mt-8 p-4 bg-yellow-500/10 rounded-lg text-center text-lg">
+  Tests define <span v-mark.underline.yellow="5">intent</span> — code fulfills it.
+</div>
+
+---
 layout: center
 ---
 
