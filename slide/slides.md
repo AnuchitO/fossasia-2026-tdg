@@ -59,35 +59,29 @@ transition: fade-out
   </div>
 </div>
 
-<div v-click class="mt-5 p-4 bg-white/5 rounded-lg text-center text-base">
-  Most real software is legacy software.<br>
-  <span class="opacity-60 text-sm">This is the problem AI tools weren't built to solve.</span>
+<div v-click class="mt-5 p-6 bg-white/10 border border-white/20 rounded-2xl text-center">
+  <div class="text-2xl font-black">Most real software is legacy software.</div>
+  <div class="opacity-60 text-base mt-2">This is the problem AI tools weren't built to solve.</div>
 </div>
 
 ---
 
-# The Bottleneck Was Never the Typing
+# Tests Take Time. AI Doesn't Have To.
 
-<div class="grid grid-cols-2 gap-6 mt-8">
-  <div v-click class="p-5 bg-blue-500/10 rounded-lg text-center">
-    <div class="text-5xl font-black text-blue-400">&lt;10%</div>
-    <div class="mt-2 text-sm opacity-70">of developer time<br>actually writing code</div>
-  </div>
-  <div v-click class="p-5 bg-red-500/10 rounded-lg text-center">
-    <div class="text-5xl font-black text-red-400">75%</div>
-    <div class="mt-2 text-sm opacity-70">debugging, integration<br>& maintenance</div>
-  </div>
-</div>
-
-<div v-click class="mt-6 p-6 bg-yellow-500/10 rounded-lg text-center">
-  <div class="text-xs opacity-60 mb-3">With AI generating more code than ever —</div>
-  <div class="text-4xl font-black tracking-wide leading-tight">
+<div v-click class="mt-8 p-8 bg-yellow-500/10 border border-yellow-500/20 rounded-2xl text-center">
+  <div class="text-sm opacity-50 mb-4 tracking-widest uppercase">The reality today</div>
+  <div class="text-3xl font-black tracking-wide leading-tight">
     More code. Faster.<br>Still <span class="text-red-400">no tests</span>. Still <span class="text-orange-400">no proof</span>.
   </div>
+  <div class="text-xs opacity-40 mt-4">With AI generating more code than ever —</div>
 </div>
 
-<div class="abs-bl mb-4 ml-6 text-xs opacity-30">
-  ¹ Rodenas, D. · ² Undo/Coralogix Developer Survey · ³ Microsoft Research, IEEE TSE
+<div v-click class="mt-6 p-6 bg-blue-500/10 border border-blue-500/20 rounded-2xl text-center">
+  <div class="text-sm opacity-50 mb-3 tracking-widest uppercase">The question we should be asking</div>
+  <div class="text-2xl font-bold">
+    We have AI that generates code in seconds.<br>
+    <span class="text-blue-300">Why aren't we using it to write the tests?</span>
+  </div>
 </div>
 
 ---
