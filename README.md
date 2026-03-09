@@ -18,3 +18,5 @@ The core idea is simple:
 **clone developer skills into AI agents and let them work using the same disciplined practices we use.**
 
 This approach helps teams build software faster while maintaining production-grade quality.
+
+[Slide](https://anuchito.github.io/fossasia-2026-tdg/)
