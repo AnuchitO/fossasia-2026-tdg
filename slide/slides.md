@@ -12,6 +12,10 @@ drawings:
   persist: false
 transition: slide-left
 duration: 20min
+fonts:
+  sans: 'Inter'
+  mono: 'JetBrains Mono'
+  weights: '400,600,700'
 ---
 
 # TDG for Software Development

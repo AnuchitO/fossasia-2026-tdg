@@ -1,0 +1,38 @@
+/* Global font clarity and size for conference presentation */
+.slidev-layout {
+  font-size: 1.4rem;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+.slidev-layout h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.slidev-layout h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.slidev-layout h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.slidev-layout p,
+.slidev-layout li {
+  font-size: 1.4rem;
+  line-height: 1.75;
+}
+
+.slidev-layout code {
+  font-size: 1.1rem;
+}
+
+.slidev-layout pre code {
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
