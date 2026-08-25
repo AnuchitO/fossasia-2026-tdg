@@ -20,3 +20,17 @@ The core idea is simple:
 This approach helps teams build software faster while maintaining production-grade quality.
 
 [Slide](https://anuchito.github.io/fossasia-2026-tdg/)
+
+## TDG Installation
+
+Install the TDG skill from GitHub using the skills CLI:
+
+```
+bunx skills add chanwit/tdg
+```
+
+or
+
+```
+npx skills add chanwit/tdg
+```
